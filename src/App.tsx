@@ -1,11 +1,8 @@
-
+import React from "react"
 import { Home } from "./pages"
 
-export default function App() {
-
-  return (
-    <>
-      <Home />
-    </>
-  )
+const App: React.FC = () => {
+  return <Home />
 }
+
+export default App
