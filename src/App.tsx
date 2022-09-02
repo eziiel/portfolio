@@ -1,4 +1,4 @@
-import React from "react"
+
 import { Home } from "./pages"
 
 export default function App() {
@@ -9,4 +9,3 @@ export default function App() {
     </>
   )
 }
-
