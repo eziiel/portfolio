@@ -4,11 +4,11 @@ import styled, { css } from "styled-components"
 interface PropsImg {
   src: string;
   alt: string;
-  status: boolean;
+  status?: boolean;
 }
 
 interface PropsTitle {
-  status: boolean;
+  status?: boolean;
 }
 
 const Nav = styled.nav`
@@ -44,7 +44,7 @@ const Img = styled.img.attrs(({ alt, src, status }: PropsImg) => {
   src
 })`
   width: 40px;
-  transition: 0.3s ease-in;
+  transition: 0.4s ease-in;
 
   ${props =>
     props.status === true &&
@@ -61,15 +61,17 @@ const SpanMenu =
   position: absolute;
   opacity: 0;
   transform: translate3d(-40px, 0, 0);
-  transition: 0.3s ease-in;
+  transition: 0.5s ease-in;
 
 
   ${props =>
-    props.status &&
+    props.status === true &&
     css`
       opacity: 1;
       transform: translate3d(0, 0, 0);
     `}
 `
 
-export { Nav, Ul, Li, Img, SpanMenu }
+const LinkForPage = styled.a``
+
+export { Nav, Ul, Li, Img, SpanMenu, LinkForPage }

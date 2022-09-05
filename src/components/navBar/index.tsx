@@ -4,20 +4,21 @@ import * as S from "./styled"
 import Images from "../../assets/images.json"
 
 export const NavBar: React.FC = () => {
-  const [statusMenu, setStatusMenu] = React.useState(false)
+  const [menuOpen, setMenuOpen] = React.useState(Number)
 
-  const handleStatusMenu = (): void => {
-    setStatusMenu(!statusMenu)
+  const handleStatusMenu = (id: number): void => {
+    setMenuOpen(id)
   }
   return (
     <S.Nav>
-      <h1>{`<Protifólio/>`}</h1>
+      <h1 onClick={() => setMenuOpen(-1)}>{`<Protifólio/>`}</h1>
       <S.Ul>
-        {Images.map(({ src, alt, text }) => (
-          <S.Li key={alt} onClick={handleStatusMenu}>
-            {/* eslint-disable-next-line @typescript-eslint/restrict-template-expressions */}
-            <S.SpanMenu status={statusMenu}>{`<${text} />`} </S.SpanMenu>
-            <S.Img src={src} alt={alt} status={statusMenu} />
+        {Images.map(({ src, alt, text, id }) => (
+          <S.Li key={alt} onClick={() => handleStatusMenu(id)}>
+            <S.LinkForPage>
+              <S.Img src={src} alt={alt} status={id === menuOpen}></S.Img>
+              <S.SpanMenu status={id === menuOpen}>{text}</S.SpanMenu>
+            </S.LinkForPage>
           </S.Li>
         ))}
       </S.Ul>
