@@ -1,0 +1,33 @@
+[
+  {
+    "id":0,
+    "src" : "images/menu/inicio.svg",
+    "alt" : "inicio-icon",
+    "text" : "Início"
+    
+  },
+  {
+    "id":1,
+    "src" : "images/menu/sobre.svg",
+    "alt" : "sobre-icon",
+    "text" : "Sobre"
+  },
+  {
+    "id":2,
+    "src" : "images/menu/experiencia.svg",
+    "alt" : "experiencia-icon",
+    "text" : "Experiencia"
+  },
+  {
+    "id":3,
+    "src" : "images/menu/projetos.svg",
+    "alt" : "projetos-icon",
+    "text" : "Projetos"
+  },
+  {
+    "id":4,
+    "src" : "images/menu/contato.svg",
+    "alt" : "contato-icon",
+    "text" : "Contato"
+  }
+]
