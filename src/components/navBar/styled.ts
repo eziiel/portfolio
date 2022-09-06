@@ -13,7 +13,7 @@ interface PropsTitle {
 
 const Nav = styled.nav`
   font-family: "Major Mono Display", monospace;
-  /* font-family: "JetBrains Mono", monospace; */
+  font-family: "JetBrains Mono", monospace;
   font-weight: bold;
   padding: 0 2rem;
   height: 100vh;
@@ -22,6 +22,7 @@ const Nav = styled.nav`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  grid-column: 1;
 `
 const Title = styled.span`
   font-weight: bold;

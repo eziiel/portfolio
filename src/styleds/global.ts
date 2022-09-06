@@ -17,11 +17,25 @@ a{
 img{
   display: block;
 }
+:root{
+  /* colors */
+  --light: #FCFCFC;
+  --grey: #4A525A;
+  --dark-grey: #24272B;
+  --blue: #011521;
+  --dark-blue: #07070A;
+  --orange: #FF7700;
 
+
+  //fonts
+
+  
+}
 body{
   /* font-family: 'Major Mono Display', monospace; */
-  /* font-family: 'JetBrains Mono', monospace; */
+  font-family: "JetBrains Mono", monospace;
   height: 1500px;
+  background: var(--light);
 }
 
 `
