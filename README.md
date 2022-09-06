@@ -8,7 +8,7 @@
   expecificamente em frontEnd - as vezes arrisco no backEnd XD
   <br />
   <br />
-  aqui nesse portifólio você irá conhecer um pouco mais sobre mim, 
+  aqui nesse portfólio você irá conhecer um pouco mais sobre mim, 
   fique a vontade 🚀
   <br /><br /><br />
 
