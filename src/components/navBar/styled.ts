@@ -13,6 +13,7 @@ interface PropsTitle {
 
 const Nav = styled.nav`
   font-family: "Major Mono Display", monospace;
+  /* font-family: "JetBrains Mono", monospace; */
   font-weight: bold;
   padding: 0 2rem;
   height: 100vh;

@@ -20,6 +20,7 @@ img{
 
 body{
   /* font-family: 'Major Mono Display', monospace; */
+  /* font-family: 'JetBrains Mono', monospace; */
   height: 1500px;
 }
 
