@@ -11,13 +11,15 @@ export const NavBar: React.FC = () => {
   }
   return (
     <S.Nav>
-      <h1 onClick={() => setMenuOpen(-1)}>{`<Protifólio/>`}</h1>
+      <S.Title onClick={() => setMenuOpen(0)}>
+        <a href="#inicio">{`<Portifólio />`}</a>
+      </S.Title>
       <S.Ul>
         {Images.map(({ src, alt, text, id }) => (
           <S.Li key={alt} onClick={() => handleStatusMenu(id)}>
-            <S.LinkForPage>
+            <S.LinkForPage href={`#${text}`}>
               <S.Img src={src} alt={alt} status={id === menuOpen}></S.Img>
-              <S.SpanMenu status={id === menuOpen}>{text}</S.SpanMenu>
+              <S.SpanMenu status={id === menuOpen}>{`<${text} />`}</S.SpanMenu>
             </S.LinkForPage>
           </S.Li>
         ))}

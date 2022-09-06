@@ -19,7 +19,7 @@ img{
 }
 
 body{
-  font-family: 'Inconsolata', monospace;
+  /* font-family: 'Major Mono Display', monospace; */
   height: 1500px;
 }
 
