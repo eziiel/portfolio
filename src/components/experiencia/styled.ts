@@ -1,8 +1,67 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 import styled from "styled-components"
 import { Section } from "../../styleds/forComponents/geral"
 
+interface PropsImg {
+  src: string;
+  alt: string;
+}
+
 const ExperienciaSection = styled(Section)`
-  background: green;
+  background: #0a81d1;
+  background: var(--dark-blue);
+  justify-content: center;
+  align-items: center;
+`
+const ExperienciaInfo = styled.article`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+const Ferramentas = styled.ul`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+`
+const IconsFerramentas = styled.li`
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 `
 
-export { ExperienciaSection }
+const NameIcon = styled.span`
+  border-top: 1.5px solid var(--orange);
+  padding: 1rem;
+  color: var(--orange);
+`
+
+const Img = styled.img.attrs(({ alt, src }: PropsImg) => {
+  alt
+  src
+})`
+  align-items: center;
+  width: 40px;
+  transition: 0.5s ease-in;
+`
+
+const InfoFerramentas = styled.span`
+  text-align: center;
+  padding: 2rem;
+  color: var(--orange);
+`
+
+export {
+  ExperienciaSection,
+  ExperienciaInfo,
+  Ferramentas,
+  IconsFerramentas,
+  Img,
+  NameIcon,
+  InfoFerramentas
+}

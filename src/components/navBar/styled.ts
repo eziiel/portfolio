@@ -12,7 +12,7 @@ interface PropsTitle {
 }
 
 const Nav = styled.nav`
-  width: 11%;
+  width: 13%;
   font-family: "Major Mono Display", monospace;
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
@@ -101,11 +101,17 @@ const LinkForPage = styled.a`
 const NavRedes = styled.ul`
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  align-self: start;
+  width: 110%;
   height: 40%;
+  gap: 0.5rem;
+
   li {
-    padding: 1rem;
+    /* padding: 1rem; */
+    a {
+      width: 100%;
+      flex-direction: column;
+      font-size: 0.8rem;
+    }
   }
 `
 
