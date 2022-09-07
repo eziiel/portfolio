@@ -18,6 +18,7 @@
 ## 🔭 About
 
 <br/>
+
 >Estudo sobre programação de forma autodidata tem pouco mais de um ano, 
 comecei com um curso introdutório a JavaScript pela,Trybe e aprofundei 
 mais com os cursos da Origamid, desde então venho estudando através de 
@@ -25,6 +26,7 @@ documentações, livros e pesquisa, mantendo uma rotina própria de estudos.
 <br/>
 <br/>
 >Como ainda não possuo experiência trabalhando em uma empresa, dedico meus conhecimentos para projetos pessoais, procurando modelos, em sites como FrontEnd-Mentor, dribbble e figma, para melhorar algoritimos e lógica vejo vídeo-aulas, leio e prático diariamente em sites como HackerRank, FreeCodeCamp, CodeWars.  
+
 <br/>
 <br/>
 <br/>
