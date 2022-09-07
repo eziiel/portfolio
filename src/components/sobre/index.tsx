@@ -4,7 +4,7 @@ import { Title } from "../../styleds/forComponents/geral"
 
 export const Sobre: React.FC = () => {
   return (
-    <S.SobreSection>
+    <S.SobreSection id="Sobre">
       <Title>Sobre</Title>
       <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, non.
