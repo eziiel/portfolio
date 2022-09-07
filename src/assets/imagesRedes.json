@@ -1,0 +1,17 @@
+[
+  {
+    "id":0,
+    "src" : "images/redes/github.svg",
+    "alt" : "github-icon",
+    "text" : "Início",
+    "link" : "https://github.com/eziiel"
+    
+  },
+  {
+    "id":1,
+    "src" : "images/redes/linkedin.svg",
+    "alt" : "linkedin-icon",
+    "text" : "linkedin",
+    "link" : "https://www.linkedin.com/in/eziel-pereira-ab8205229/"
+  }
+]

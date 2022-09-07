@@ -16,7 +16,7 @@ const Nav = styled.nav`
   font-family: "Major Mono Display", monospace;
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
-  /* padding: 0 2rem; */
+  padding: 0 2rem;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -48,7 +48,9 @@ const Ul = styled.ul`
   flex-direction: column;
   padding: 2rem 0;
   width: 100%;
+  height: 100%;
   align-items: stretch;
+  justify-content: center;
 `
 
 const Li = styled.li`
@@ -96,5 +98,15 @@ const LinkForPage = styled.a`
   align-items: center;
   gap: 0.5rem;
 `
+const NavRedes = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-self: start;
+  height: 40%;
+  li {
+    padding: 1rem;
+  }
+`
 
-export { Nav, Ul, Li, Img, SpanMenu, LinkForPage, Title }
+export { Nav, Ul, Li, Img, SpanMenu, LinkForPage, Title, NavRedes }

@@ -2,6 +2,7 @@ import React from "react"
 import * as S from "./styled"
 // import Teste from "../../../public/images/teste.svg"
 import Images from "../../assets/images.json"
+import Redes from "../../assets/imagesRedes.json"
 import { MM } from "../../assets/mm"
 
 export const NavBar: React.FC = () => {
@@ -12,11 +13,6 @@ export const NavBar: React.FC = () => {
   }
   return (
     <S.Nav>
-      {/* <S.Title onClick={() => setMenuOpen(-1)}>
-        <a href="#Início">
-          <MM text="Portfólio" />
-        </a>
-      </S.Title> */}
       <S.Ul>
         {Images.map(({ src, alt, text, id }) => (
           <S.Li key={alt} onClick={() => handleStatusMenu(id)}>
@@ -29,6 +25,15 @@ export const NavBar: React.FC = () => {
           </S.Li>
         ))}
       </S.Ul>
+      <S.NavRedes>
+        {Redes.map(({ id, src, alt, link }) => (
+          <li key={id}>
+            <S.LinkForPage href={link} target="_blank">
+              <S.Img src={src} alt={alt} />
+            </S.LinkForPage>
+          </li>
+        ))}
+      </S.NavRedes>
     </S.Nav>
   )
 }

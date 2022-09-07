@@ -5,7 +5,7 @@ import Data from "../../assets/dataText.json"
 import { MM } from "../../assets/mm"
 
 export const Inicio: React.FC = () => {
-  const inicio = Data[0]
+  const inicio = Data[0].inicio
 
   return (
     <S.InicioSection id="Início">

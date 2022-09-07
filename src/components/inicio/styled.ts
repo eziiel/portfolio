@@ -12,6 +12,8 @@ const InicioInfo = styled.article`
   flex-direction: column;
 `
 const Info = styled.p`
+  letter-spacing: 1px;
+
   :nth-child(2) {
     /* color: red; */
     align-self: center;
