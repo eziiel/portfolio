@@ -1,5 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 
+function pixelsToRem(...values: number[]): string {
+  // eslint-disable-next-line no-return-assign, no-param-reassign
+  return values.reduce((a, i) => (a += `${i / 16}rem `), "").trim()
+}
 const Global = createGlobalStyle`
 
 *{
@@ -13,6 +17,7 @@ li,ul{
 a{
   text-decoration: none;
   display: inline-block;
+  color: var(--dark-blue);
 }
 img{
   display: block;
@@ -28,7 +33,15 @@ img{
 
 
   //fonts
-
+  --title:normal 700 ${pixelsToRem(36)}/${pixelsToRem(
+  38
+)} "JetBrains Mono", monospace;
+  --title2:normal 700 ${pixelsToRem(24)}/${pixelsToRem(
+  32
+)} "JetBrains Mono", monospace;
+  --info:normal 700 ${pixelsToRem(22)}/${pixelsToRem(
+  24
+)} "JetBrains Mono", monospace;
   
 }
 body{
@@ -36,6 +49,8 @@ body{
   font-family: "JetBrains Mono", monospace;
   height: 1500px;
   background: var(--light);
+  color: var(--dark-blue);
+
 }
 
 `

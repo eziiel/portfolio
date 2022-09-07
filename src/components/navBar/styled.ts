@@ -12,10 +12,11 @@ interface PropsTitle {
 }
 
 const Nav = styled.nav`
+  width: 11%;
   font-family: "Major Mono Display", monospace;
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   height: 100vh;
   position: fixed;
   display: flex;
@@ -23,13 +24,22 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   grid-column: 1;
+  gap: 6rem;
+  background: linear-gradient(
+    to right,
+    #4a525a50,
+    #4a525a20,
+    #4a525a10,
+    var(--light)
+  );
 `
 const Title = styled.span`
   font-weight: bold;
   font-size: 1.3rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 8rem; */
   a {
     color: #333;
+    font: var(--title2);
   }
 `
 const Ul = styled.ul`
@@ -51,7 +61,7 @@ const Img = styled.img.attrs(({ alt, src, status }: PropsImg) => {
   src
 })`
   width: 40px;
-  transition: 0.4s ease-in;
+  transition: 0.5s ease-in;
 
   ${props =>
     props.status === true &&
@@ -64,7 +74,6 @@ const SpanMenu =
   styled.span <
   PropsTitle >
   `
-  color: #333;
   position: absolute;
   opacity: 0;
   transform: translate3d(-50px, 0, 0);
@@ -81,7 +90,7 @@ const SpanMenu =
 
 const LinkForPage = styled.a`
   /* background: blue; */
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
