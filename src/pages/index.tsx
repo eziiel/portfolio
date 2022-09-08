@@ -1,4 +1,5 @@
 import React from "react"
+import { Contato } from "../components/contato"
 import { Experiencia } from "../components/experiencia"
 import { Inicio } from "../components/inicio"
 import { NavBar } from "../components/navBar"
@@ -16,6 +17,7 @@ export const Home: React.FC = () => {
           <Inicio />
           <Sobre />
           <Experiencia />
+          <Contato />
         </S.AppMain>
       </S.AppDivStyled>
     </>

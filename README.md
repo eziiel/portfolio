@@ -13,7 +13,9 @@
   <br /><br /><br />
 
 
-  - [vercel](https://portfolio-eziiel.vercel.app/)
+  - [Portfólio](https://portfolio-eziiel.vercel.app/)
+
+<br/>
 
 ## 🔭 About
 
@@ -32,13 +34,35 @@ Como ainda não possuo experiência trabalhando em uma empresa, dedico meus conh
 <br/>
 
 ## 🔖 Projects
+<br/>
 
+
+<br/>
+<br/>
+<br/>
 
 ## 📝 Experiência
+<br/>
 
+  Posssuo experiência com:
+  - JavaScript
+  - TypeScript
+  - NextJs
+  - CSS
+  - HTML
+  - entre outras
+
+<br/>
+<br/>
+<br/>
 
 ## 📱 contact
+<br>
 
+
+Email para contato:
+ 
+eziielp10@hotmail.com
 
 <br>
 <br>

@@ -37,7 +37,7 @@ const IconsFerramentas = styled.li`
 
 const NameIcon = styled.span`
   border-top: 1.5px solid var(--orange);
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   color: var(--orange);
 `
 
