@@ -26,10 +26,11 @@ export const NavBar: React.FC = () => {
         ))}
       </S.Ul>
       <S.NavRedes>
-        {Redes.map(({ id, src, alt, link }) => (
+        {Redes.map(({ id, src, alt, link, text }) => (
           <li key={id}>
             <S.LinkForPage href={link} target="_blank">
               <S.Img src={src} alt={alt} />
+              <MM text={text} />
             </S.LinkForPage>
           </li>
         ))}

@@ -20,6 +20,7 @@ a{
   color: var(--dark-blue);
 }
 img{
+  max-width: 80%;
   display: block;
 }
 :root{
@@ -29,7 +30,7 @@ img{
   --dark-grey: #24272B;
   --blue: #011521;
   --dark-blue: #07070A;
-  --orange: #FF7700;
+  --orange: #FF7E0E;
 
 
   //fonts

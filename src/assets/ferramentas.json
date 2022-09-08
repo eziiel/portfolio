@@ -1,0 +1,38 @@
+[
+  {
+    "id":0,
+    "src" : "images/ferramentas/javascript.svg",
+    "alt" : "javascript-icon",
+    "text" : "JavaScript" 
+  },
+  {
+    "id":1,
+    "src" : "images/ferramentas/ts.svg",
+    "alt" : "TypeScript-icon",
+    "text" : "TypeScript" 
+  },
+  {
+    "id":2,
+    "src" : "images/ferramentas/nextjs.svg",
+    "alt" : "NextJs-icon",
+    "text" : "NextJs" 
+  },
+  {
+    "id":3,
+    "src" : "images/ferramentas/react.svg",
+    "alt" : "React-icon",
+    "text" : "React" 
+  },
+  {
+    "id":4,
+    "src" : "images/ferramentas/html.svg",
+    "alt" : "HMTL-icon",
+    "text" : "HTML" 
+  },
+  {
+    "id":5,
+    "src" : "images/ferramentas/css.svg",
+    "alt" : "CSS-icon",
+    "text" : "CSS" 
+  }
+]
