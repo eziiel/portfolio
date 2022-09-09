@@ -11,10 +11,10 @@ interface PropsProjeto {
   id: number;
 }
 
-interface PropsLinks {
-  nome: string;
-  link: string;
-}
+// interface PropsLinks {
+//   nome: string;
+//   link: string;
+// }
 
 // interface PropsItemProjeto {
 //   id: number;

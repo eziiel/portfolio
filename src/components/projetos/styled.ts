@@ -12,6 +12,10 @@ const ProjetoInfo = styled.article`
   display: grid;
   grid-template-columns: 2fr 3fr;
   align-items: center;
+  span {
+    /* color: var(--light); */
+    cursor: pointer;
+  }
 `
 
 export { ProjetosSection, ProjetoInfo }
