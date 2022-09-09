@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Section } from "../../styleds/forComponents/geral"
 
 const ProjetosSection = styled(Section)`
-  background: var(--dark-grey);
+  background: var(--dark-blue);
   color: var(--light);
 `
 
@@ -12,12 +12,6 @@ const ProjetoInfo = styled.article`
   display: grid;
   grid-template-columns: 2fr 3fr;
   align-items: center;
-  a {
-    color: var(--light) !important;
-  }
-`
-const ProjetoDados = styled.div`
-  height: 100%;
 `
 
-export { ProjetosSection, ProjetoInfo, ProjetoDados }
+export { ProjetosSection, ProjetoInfo }

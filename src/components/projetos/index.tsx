@@ -1,18 +1,37 @@
 import React from "react"
-import { MM } from "../../assets/mm"
+import projetos from "../../assets/datas/dataProjetos.json"
+import { ProjetoCard } from "../../assets/projetoCard/projeto"
+import { MM } from "../../assets/textCode/mm"
 import { Title } from "../../styleds/forComponents/geral"
-import * as S from "./styled"
 import * as N from "../navBar/styled"
-import projetos from "../../assets/dataProjetos.json"
+import * as S from "./styled"
 
 interface PropsProjeto {
   nome: string;
-  vercel: string;
-  github?: string;
+  id: number;
 }
 
+interface PropsLinks {
+  nome: string;
+  link: string;
+}
+
+// interface PropsItemProjeto {
+//   id: number;
+//   nome: string;
+//   links: PropsLinks[];
+//   infoName: string;
+//   infoText: string;
+//   img: string;
+//   alt: string;
+// }
+
 export const Projetos: React.FC = () => {
-  console.log(projetos)
+  const [projeto, setProjeto] = React.useState(projetos[0])
+
+  const handleProjeto = (id: number): void => {
+    setProjeto(projetos[id])
+  }
 
   return (
     <S.ProjetosSection id="Projetos">
@@ -21,15 +40,21 @@ export const Projetos: React.FC = () => {
       </Title>
       <S.ProjetoInfo>
         <N.Ul>
-          {projetos.map(({ nome, vercel }: PropsProjeto) => (
-            <N.Li key={nome}>
-              <N.LinkForPage target="_blank" href={vercel}>
-                <MM text={nome} />
-              </N.LinkForPage>
+          {projetos.map(({ nome, id }: PropsProjeto) => (
+            <N.Li key={nome} onClick={() => handleProjeto(id)}>
+              <MM text={nome} />
             </N.Li>
           ))}
         </N.Ul>
-        <S.ProjetoDados></S.ProjetoDados>
+        <ProjetoCard
+          links={projeto.links}
+          infoName={projeto.infoName}
+          infoText={projeto.infoText}
+          img={projeto.img}
+          alt={projeto.alt}
+          id={projeto.id}
+          nome={projeto.nome}
+        />
       </S.ProjetoInfo>
     </S.ProjetosSection>
   )

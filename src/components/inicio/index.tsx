@@ -1,8 +1,8 @@
 import React from "react"
 import * as S from "./styled"
 import { Title } from "../../styleds/forComponents/geral"
-import Data from "../../assets/dataText.json"
-import { MM } from "../../assets/mm"
+import Data from "../../assets/datas/dataText.json"
+import { MM } from "../../assets/textCode/mm"
 
 export const Inicio: React.FC = () => {
   const inicio = Data[0].inicio
