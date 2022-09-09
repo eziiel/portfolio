@@ -27,21 +27,13 @@ const Nav = styled.nav`
   gap: 6rem;
   background: linear-gradient(
     to right,
-    #4a525a50,
+    #4a525a70,
     #4a525a20,
     #4a525a10,
     var(--light)
   );
 `
-const Title = styled.span`
-  font-weight: bold;
-  font-size: 1.3rem;
-  /* margin-bottom: 8rem; */
-  a {
-    color: #333;
-    font: var(--title2);
-  }
-`
+
 const Ul = styled.ul`
   display: flex;
   gap: 2rem;
@@ -115,4 +107,4 @@ const NavRedes = styled.ul`
   }
 `
 
-export { Nav, Ul, Li, Img, SpanMenu, LinkForPage, Title, NavRedes }
+export { Nav, Ul, Li, Img, SpanMenu, LinkForPage, NavRedes }
