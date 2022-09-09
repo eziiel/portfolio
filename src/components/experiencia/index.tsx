@@ -1,8 +1,8 @@
 import React from "react"
 import * as S from "./styled"
 import { Title } from "../../styleds/forComponents/geral"
-import ferramentas from "../../assets/ferramentas.json"
-import { MM } from "../../assets/mm"
+import ferramentas from "../../assets/datas/ferramentas.json"
+import { MM } from "../../assets/textCode/mm"
 
 export const Experiencia: React.FC = () => {
   return (

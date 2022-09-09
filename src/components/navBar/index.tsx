@@ -1,9 +1,9 @@
 import React from "react"
 import * as S from "./styled"
 // import Teste from "../../../public/images/teste.svg"
-import Images from "../../assets/images.json"
-import Redes from "../../assets/imagesRedes.json"
-import { MM } from "../../assets/mm"
+import Images from "../../assets/datas/images.json"
+import Redes from "../../assets/datas/imagesRedes.json"
+import { MM } from "../../assets/textCode/mm"
 
 export const NavBar: React.FC = () => {
   const [menuOpen, setMenuOpen] = React.useState(Number)

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "nome":"Countries",
+    "links": [
+      {
+        "nome":"vercel",
+         "link":"https://countries-next-rho.vercel.app/"},
+      {
+        "nome":"github",
+        "link":"https://github.com/eziiel/countries-next"}
+    ],
+    "img": "images/projetos/countries.png",
+    "alt": "countries-banner",
+    "infoName":" Projeto realizado para pesquisa e apresentação de países.",
+    "infoText": "Utilizado Next-js, Type-Script, Styled-Components. Aplicado sistema de SSG para geração de páginas, sistema de temas com armazenamento de preferência do usuário no própio browser (locaStorage), sistema de buscas (texto: país, select: região)"
+  },
+  {
+    "id": 1,
+    "nome":"Space-Turism",
+    "links": [
+      {
+        "nome":"vercel",
+         "link":"https://space-turism-opal.vercel.app/"},
+      {
+        "nome":"github",
+        "link":"https://github.com/eziiel/Space-T"}
+    ],
+    "img": "images/projetos/space.png",
+    "alt": "space-banner",
+    "infoName":"Projeto realizado para apresentação de informações interestelares.",
+    "infoText":" Utilizado React-js, Type-Script, Styled-Components, React-Router-Dom. Aplicado display responsivo, juntamente com drop menu, e sistema de roteamento entre páginas."
+  },
+  {
+    "id": 2,
+    "nome":"Achilles",
+    "links": [
+      {
+        "nome":"vercel",
+         "link":"https://achilles-finnaly.vercel.app/"},
+      {
+        "nome":"github",
+        "link":"https://github.com/eziiel/achilles"}
+  ],
+    "img": "images/projetos/achilles.png",
+    "alt": "achilles-banner",
+    "infoName":"Projeto realizado para apresentação de marca a qual realiza projetos de UI/UX.",
+    "infoText":"Utilizado React-js, Styled-components. Aplicado display responsivo, juntamente com drop menu, carrossel desktop e touch(mobile) e alteração de tema."
+  },
+  {
+    "id": 3,
+    "nome":"Room",
+    "links": [
+      {
+        "nome":"vercel",
+         "link":"https://room-indol.vercel.app/"},
+      {
+        "nome":"github",
+        "link":"https://github.com/eziiel/room"}
+    ],
+    "img": "images/projetos/room.jpg",
+    "alt": "room-banner",
+    "infoName":"Projeto realizado para apresentação de moveis.",
+    "infoText":"Utilizado React-js, Type-Script, Styled-Components. Aplicado display responsivo, juntamente com drop menu, e sistema de slide (corrossel) para apresentação de moveis."
+  },
+  {
+    "id": 4,
+    "nome":"time tracking dashboard",
+    "links": [
+      {
+        "nome":"vercel",
+         "link":"https://time-tracking-dashboard-sooty.vercel.app/"},
+      {
+        "nome":"github",
+        "link":"https://github.com/eziiel/time-tracking-dashboard"}
+    ],
+    "img": "images/projetos/time-dashboard.png",
+    "alt": "time-dashboard-banner",
+    "infoName":"Projeto feito para acompanhar tempo gasto em certas atividades de um usuário.",
+    "infoText":"Projeto feito com React-JS, aplicado responsividade em: 940px | 680px | 480px. Aprendi mais sobre responsividade, e acabei vendo um pouco de Styled-Components, porém optei por usar css-module."
+  }
+]

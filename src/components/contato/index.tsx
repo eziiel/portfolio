@@ -1,5 +1,5 @@
 import React from "react"
-import { MM } from "../../assets/mm"
+import { MM } from "../../assets/textCode/mm"
 import { Title } from "../../styleds/forComponents/geral"
 import * as S from "./styled"
 
