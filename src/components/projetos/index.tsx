@@ -1,5 +1,6 @@
 import React from "react"
 import projetos from "../../assets/datas/dataProjetos.json"
+import { Observe } from "../../assets/observer"
 import { ProjetoCard } from "../../assets/projetoCard/projeto"
 import { MM } from "../../assets/textCode/mm"
 import { Title } from "../../styleds/forComponents/geral"
@@ -11,21 +12,6 @@ interface PropsProjeto {
   id: number;
 }
 
-// interface PropsLinks {
-//   nome: string;
-//   link: string;
-// }
-
-// interface PropsItemProjeto {
-//   id: number;
-//   nome: string;
-//   links: PropsLinks[];
-//   infoName: string;
-//   infoText: string;
-//   img: string;
-//   alt: string;
-// }
-
 export const Projetos: React.FC = () => {
   const [projeto, setProjeto] = React.useState(projetos[0])
 
@@ -35,6 +21,7 @@ export const Projetos: React.FC = () => {
 
   return (
     <S.ProjetosSection id="Projetos">
+      <Observe reference="#Projetos" />
       <Title>
         <MM text="Projetos" />
       </Title>

@@ -4,12 +4,13 @@ import * as S from "./styled"
 import Images from "../../assets/datas/images.json"
 import Redes from "../../assets/datas/imagesRedes.json"
 import { MM } from "../../assets/textCode/mm"
+import { ContextRef } from "../../context"
 
 export const NavBar: React.FC = () => {
-  const [menuOpen, setMenuOpen] = React.useState(Number)
+  const { component, setComponent } = React.useContext(ContextRef)
 
   const handleStatusMenu = (id: number): void => {
-    setMenuOpen(id)
+    setComponent(id)
   }
   return (
     <S.Nav>
@@ -17,8 +18,8 @@ export const NavBar: React.FC = () => {
         {Images.map(({ src, alt, text, id }) => (
           <S.Li key={alt} onClick={() => handleStatusMenu(id)}>
             <S.LinkForPage href={`#${text}`}>
-              <S.Img src={src} alt={alt} status={id === menuOpen}></S.Img>
-              <S.SpanMenu status={id === menuOpen}>
+              <S.Img src={src} alt={alt} status={id === component}></S.Img>
+              <S.SpanMenu status={id === component}>
                 <MM text={text} />
               </S.SpanMenu>
             </S.LinkForPage>
