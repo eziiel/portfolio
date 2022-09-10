@@ -14,12 +14,13 @@ export const Observe = ({ reference }: PropsRef) => {
 
   const options = {
     root: document.querySelector(reference)!,
-    rootMargin: "0px",
+    rootMargin: "50px",
     threshold: 1.0
   }
 
   React.useEffect(() => {
     const intersectionObserver = new IntersectionObserver(entries => {
+      console.log(entries[0].isIntersecting)
       Data.forEach(({id, text}) => {
         if(entries[0].target.id === text && entries[0].isIntersecting) {
           setComponent(id)
