@@ -12,7 +12,7 @@ import Global from "../styleds/global"
 import * as S from "../styleds/PageIndex"
 
 export const Home: React.FC = () => {
-  // window.alert("Projeto em desenvolvimento! 🔧🚧🚀")
+  window.alert("Projeto em desenvolvimento! 🔧🚧🚀")
   return (
     <ContextRefProvider>
       <S.AppDivStyled>
