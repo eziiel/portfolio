@@ -10,7 +10,7 @@ interface PropsRef {
 }
 
 export const Observe = ({ reference }: PropsRef) => {
-  const { setComponent } = React.useContext(ContextRef)
+  const { component, setComponent } = React.useContext(ContextRef)
 
   const options = {
     root: document.querySelector(reference)!,
@@ -20,7 +20,7 @@ export const Observe = ({ reference }: PropsRef) => {
 
   React.useEffect(() => {
     const intersectionObserver = new IntersectionObserver(entries => {
-      console.log(entries[0].isIntersecting)
+      // console.log(entries[0].isIntersecting)
       Data.forEach(({id, text}) => {
         if(entries[0].target.id === text && entries[0].isIntersecting) {
           setComponent(id)
@@ -31,7 +31,7 @@ export const Observe = ({ reference }: PropsRef) => {
     intersectionObserver.observe(document.querySelector(reference)!)
 
     return () => intersectionObserver.disconnect()
-  }, [])
+  }, [component])
 
   return <></>
 }
