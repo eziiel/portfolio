@@ -6,8 +6,6 @@ import Data from "../../assets/datas/dataText.json"
 import { Observe } from "../../assets/observer"
 
 export const Sobre: React.FC = () => {
-  // const ref = React.useRef<HTMLElement>(null)
-  // const { setRef} = React.useContext(ContextRef)
   const data = Data[0].sobre
 
   return (

@@ -1,6 +1,5 @@
 import React from "react"
 import * as S from "./styled"
-// import Teste from "../../../public/images/teste.svg"
 import Images from "../../assets/datas/images.json"
 import Redes from "../../assets/datas/imagesRedes.json"
 import { MM } from "../../assets/textCode/mm"
