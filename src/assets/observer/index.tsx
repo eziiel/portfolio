@@ -10,20 +10,20 @@ interface PropsRef {
 }
 
 export const Observe = ({ reference }: PropsRef) => {
-  const { setComponent } = React.useContext(ContextRef)
+  const { component, setComponent } = React.useContext(ContextRef)
 
   const options = {
     root: document.querySelector(reference)!,
-    rootMargin: "50px",
-    threshold: 1.0
+    rootMargin: "0px",
+    threshold: 0.5
   }
 
   React.useEffect(() => {
     const intersectionObserver = new IntersectionObserver(entries => {
-      console.log(entries[0].isIntersecting)
       Data.forEach(({id, text}) => {
         if(entries[0].target.id === text && entries[0].isIntersecting) {
           setComponent(id)
+          window.localStorage.setItem("component", JSON.stringify(component))
         }
       })
     }, options)
