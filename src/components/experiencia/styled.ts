@@ -39,6 +39,11 @@ const NameIcon = styled.span`
   border-top: 1.5px solid var(--orange);
   padding: 1rem 1.5rem;
   color: var(--orange);
+  transition: 0.5s;
+
+  @media (max-width: 1370px) {
+    font-size: 0.875rem;
+  }
 `
 
 const Img = styled.img.attrs(({ alt, src }: PropsImg) => {

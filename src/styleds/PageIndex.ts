@@ -4,6 +4,11 @@ const AppDivStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
   height: 1400px;
+  position: relative;
+
+  @media (max-width: 1260px) {
+    grid-template-columns: 1fr;
+  }
 `
 const AppMain = styled.main`
   height: 100%;
@@ -12,6 +17,10 @@ const AppMain = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1260px) {
+    grid-column: 1;
+  }
 `
 
 export { AppDivStyled, AppMain }
