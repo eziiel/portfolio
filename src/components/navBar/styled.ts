@@ -89,6 +89,7 @@ const LinkForPage = styled.a`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  position: relative;
 `
 const NavRedes = styled.ul`
   display: flex;

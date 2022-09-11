@@ -13,9 +13,10 @@ const SobreInfo = styled.article`
   height: 100%;
 `
 const Info = styled.p`
-  padding: 0.5rem 0;
+  padding: 3rem 0;
   color: var(--light);
   letter-spacing: 1px;
+  text-indent: 2em;
 `
 
 export { SobreSection, SobreInfo, Info }
