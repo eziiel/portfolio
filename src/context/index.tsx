@@ -11,8 +11,10 @@ interface PropsRef {
   setComponent: (newState: number) => void;
 }
 
+const local = window.localStorage.getItem("component")
+
 const init: PropsRef = {
-  component: 0,
+  component: local != null ? JSON.parse(local) : 0,
   setComponent: () => {}
 }
 export const ContextRef = createContext(init)
