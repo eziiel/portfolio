@@ -12,11 +12,10 @@ interface PropsTitle {
 }
 
 const Nav = styled.nav`
-  width: 13%;
+  width: 11%;
   font-family: "Major Mono Display", monospace;
   font-family: "JetBrains Mono", monospace;
   font-weight: bold;
-  padding: 0 2rem;
   height: 100vh;
   position: fixed;
   display: flex;
@@ -32,6 +31,10 @@ const Nav = styled.nav`
     #4a525a10,
     var(--light)
   );
+
+  @media (max-width: 1260px) {
+    display: none;
+  }
 `
 
 const Ul = styled.ul`
@@ -60,7 +63,7 @@ const Img = styled.img.attrs(({ alt, src, status }: PropsImg) => {
   ${props =>
     props.status === true &&
     css`
-      transform: translate3d(115px, 0, 0);
+      transform: translate3d(100px, 0, 0);
     `}
 `
 
@@ -83,23 +86,31 @@ const SpanMenu =
 `
 
 const LinkForPage = styled.a`
-  /* background: blue; */
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   position: relative;
+
+  @media (max-width: 1670px) {
+    font-size: 0.875rem;
+  }
 `
 const NavRedes = styled.ul`
   display: flex;
-  justify-content: space-between;
-  width: 110%;
-  height: 40%;
   gap: 0.5rem;
+  place-content: center;
+  width: 100%;
+  height: 40%;
+
+  @media (max-width: 1670px) {
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 2rem;
+  }
 
   li {
-    /* padding: 1rem; */
     a {
       width: 100%;
       flex-direction: column;

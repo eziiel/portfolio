@@ -1,0 +1,14 @@
+@media (max-width: 1670px) {
+
+}
+
+1415
+  exp: name react break
+1330
+  exp:intens explod
+1220
+  proj: nav item break
+
+1260
+  Nav:display none
+  page:main component display grid 1fr
