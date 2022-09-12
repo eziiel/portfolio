@@ -11,19 +11,11 @@ interface PropsTitle {
   status: boolean;
 }
 
-const Nav = styled.nav`
+const Header = styled.header`
   width: 11%;
-  font-family: "Major Mono Display", monospace;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: bold;
   height: 100vh;
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1;
-  gap: 6rem;
+
   background: linear-gradient(
     to right,
     #4a525a70,
@@ -33,6 +25,34 @@ const Nav = styled.nav`
   );
 
   @media (max-width: 1260px) {
+    display: none;
+  }
+
+  @media (max-width: 750px) {
+    grid-column: 1;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+  }
+`
+
+const Nav = styled.nav`
+  width: 100%;
+  height: 100%;
+  font-family: "Major Mono Display", monospace;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  @media (max-width: 750px) {
     display: none;
   }
 `
@@ -119,4 +139,4 @@ const NavRedes = styled.ul`
   }
 `
 
-export { Nav, Ul, Li, Img, SpanMenu, LinkForPage, NavRedes }
+export { Header, Nav, Ul, Li, Img, SpanMenu, LinkForPage, NavRedes }
