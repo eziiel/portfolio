@@ -34,6 +34,7 @@ const Ferramentas = styled.ul`
   @media (max-width: 740px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background: red;
     gap: 0;
   }
 `
