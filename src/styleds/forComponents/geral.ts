@@ -8,6 +8,10 @@ const Section = styled.section`
   height: 95vh;
   transition: ease-in-out 0.5s;
   animation: 0.5s;
+
+  @media (max-width: 390px) {
+    height: auto;
+  }
 `
 const Title = styled.h1`
   width: 100%;
@@ -16,6 +20,12 @@ const Title = styled.h1`
   margin-top: 3rem;
   color: var(--dark-blue) !important;
   font: var(--title);
+  transition: 0.5s;
+
+  @media (max-width: 644px) {
+    font: var(--title3);
+    padding: 5rem 0;
+  }
 `
 
 export { Section, Title }

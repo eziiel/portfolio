@@ -12,7 +12,10 @@ export const Contato: React.FC = () => {
         <MM text="Contato" />
       </Title>
       <S.ContatoInfo>
-        <MM text="E-mail para contato: eziielp10@hotmail.com" />
+        <S.Contato>
+          <p>E-mail para contato:</p>
+          <MM text="eziielp10@hotmail.com" />
+        </S.Contato>
         <MM text="Portfólio feito por Eziel Pereira" />
       </S.ContatoInfo>
     </S.ContatoSection>
