@@ -19,11 +19,23 @@ const ExperienciaInfo = styled.article`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 `
 const Ferramentas = styled.ul`
   display: flex;
   justify-content: space-around;
   width: 100%;
+
+  @media (max-width: 1025px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  @media (max-width: 740px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
 `
 const IconsFerramentas = styled.li`
   height: 100%;

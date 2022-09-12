@@ -9,13 +9,26 @@ const ContatoSection = styled(Section)`
 const ContatoInfo = styled.article`
   padding: 3rem;
   display: flex;
-  gap: 2rem;
+  gap: 5em;
   flex-direction: column;
   height: 100%;
   justify-content: center;
   align-items: center;
   color: var(--dark-blue);
   font: var(--info);
+  text-align: center;
+
+  @media (max-width: 1670px) {
+    font-size: 1rem;
+    padding: 3rem 1rem;
+  }
 `
 
-export { ContatoSection, ContatoInfo }
+const Contato = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`
+
+export { ContatoSection, ContatoInfo, Contato }

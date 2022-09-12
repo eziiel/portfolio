@@ -40,6 +40,9 @@ img{
   --title2:normal 700 ${pixelsToRem(24)}/${pixelsToRem(
   32
 )} "JetBrains Mono", monospace;
+  --title3:normal 700 ${pixelsToRem(28)}/${pixelsToRem(
+  32
+)} "JetBrains Mono", monospace;
   --info:normal 700 ${pixelsToRem(22)}/${pixelsToRem(
   24
 )} "JetBrains Mono", monospace;

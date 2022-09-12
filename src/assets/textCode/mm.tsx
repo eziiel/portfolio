@@ -1,9 +1,10 @@
 import React from "react"
+import Span from "./styled"
 
 interface Props {
   text: string;
 }
 
 export const MM = ({ text }: Props): JSX.Element => {
-  return <span>{`<${text} / >`}</span>
+  return <Span>{`<${text} / >`}</Span>
 }
