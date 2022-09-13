@@ -13,18 +13,8 @@ export const NavBar: React.FC = () => {
     setComponent(id)
   }
 
-  const handleClick = (e: React.MouseEvent<Element, MouseEvent>): void => {
-    const width = head?.current?.getBoundingClientRect().width
-
-    if (width != null && width >= 700) {
-      head.current?.addEventListener("click", () => console.log("click"))
-    }
-
-    console.log(e)
-  }
-
   return (
-    <S.Header ref={head} onClick={event => handleClick(event)}>
+    <S.Header id="Nav" ref={head}>
       <S.Nav>
         <S.Ul>
           {Images.map(({ src, alt, text, id }) => (
