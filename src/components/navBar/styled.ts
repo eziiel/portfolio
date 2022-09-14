@@ -27,17 +27,6 @@ const Header = styled.header`
   @media (max-width: 1260px) {
     display: none;
   }
-
-  @media (max-width: 750px) {
-    grid-column: 1;
-    display: flex;
-    width: 100px;
-    height: 100px;
-    background: green;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-  }
 `
 
 const Nav = styled.nav`
@@ -51,10 +40,6 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   gap: 6rem;
-
-  @media (max-width: 750px) {
-    display: none;
-  }
 `
 
 const Ul = styled.ul`

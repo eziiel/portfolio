@@ -10,37 +10,9 @@ import Global from "../styleds/global"
 import * as S from "../styleds/PageIndex"
 
 export const Home: React.FC = () => {
-  const NavMove = React.useRef<HTMLDivElement>(null)
-  // const [clickNav, setClickNav] = React.useState(false)
-  // const [ref, setRef] = React.useState: Element | null()
-  window.alert("Projeto em desenvolvimento! 🔧🚧🚀")
-
-  const mouseMove = React.useCallback((e: Event): void => {
-    console.log(e)
-  }, [])
-
-  const handleMouseDown = React.useCallback((): void => {
-    // setClickNav(true)
-    if (NavMove.current != null)
-      NavMove.current.addEventListener("mousemove", mouseMove)
-    // console.log(clickNav);
-  }, [])
-
-  const handleMouseUp = React.useCallback((): void => {
-    // setClickNav(false)
-    if (NavMove.current != null)
-      NavMove?.current.removeEventListener("mousemove", mouseMove)
-    // console.log(clickNav)
-  }, [])
-
   return (
     <ContextRefProvider>
-      <S.AppDivStyled
-        id="app"
-        ref={NavMove}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-      >
+      <S.AppDivStyled id="app">
         <Global />
         <NavBar />
         <S.AppMain>
