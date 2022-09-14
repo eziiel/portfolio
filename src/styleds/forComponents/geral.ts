@@ -21,6 +21,7 @@ const Title = styled.h1`
   color: var(--dark-blue) !important;
   font: var(--title);
   transition: 0.5s;
+  text-align: right;
 
   @media (max-width: 644px) {
     font: var(--title3);

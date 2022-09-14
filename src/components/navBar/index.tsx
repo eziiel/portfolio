@@ -4,7 +4,7 @@ import Images from "../../assets/datas/images.json"
 import Redes from "../../assets/datas/imagesRedes.json"
 import { MM } from "../../assets/textCode/mm"
 import { ContextRef } from "../../context"
-import { DropMenu } from "../../assets/dropMenu"
+import { DropMenu } from "./dropMenu"
 
 export const NavBar: React.FC = () => {
   const { component, setComponent } = React.useContext(ContextRef)

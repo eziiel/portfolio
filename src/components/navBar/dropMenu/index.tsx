@@ -1,8 +1,8 @@
 import React from "react"
 import * as S from "./styled"
-import drop from "../datas/dropMenu.json"
-import { MM } from "../textCode/mm"
-import { ContextRef } from "../../context"
+import drop from "../../../assets/datas/dropMenu.json"
+import { MM } from "../../../assets/textCode/mm"
+import { ContextRef } from "../../../context"
 
 export const DropMenu: React.FC = () => {
   const [active, setActive] = React.useState(false)
