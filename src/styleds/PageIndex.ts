@@ -17,10 +17,10 @@ const AppMain = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
+  /* 
   @media (max-width: 1260px) {
-    grid-column: 1;
-  }
+    padding-top: 100px;
+  } */
 `
 
 export { AppDivStyled, AppMain }

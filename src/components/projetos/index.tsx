@@ -3,8 +3,10 @@ import projetos from "../../assets/datas/dataProjetos.json"
 import { Observe } from "../../assets/observer"
 import { ProjetoCard } from "../../assets/projetoCard/projeto"
 import { MM } from "../../assets/textCode/mm"
+import { ContextRef } from "../../context"
 import { Title } from "../../styleds/forComponents/geral"
 import * as N from "../navBar/styled"
+import { DropDownProjeto } from "./dropDownProjetos"
 import * as S from "./styled"
 
 interface PropsProjeto {
@@ -13,11 +15,16 @@ interface PropsProjeto {
 }
 
 export const Projetos: React.FC = () => {
+  const { projetoId } = React.useContext(ContextRef)
   const [projeto, setProjeto] = React.useState(projetos[0])
 
   const handleProjeto = (id: number): void => {
     setProjeto(projetos[id])
   }
+
+  React.useEffect(() => {
+    setProjeto(projetos[projetoId])
+  }, [projetoId])
 
   return (
     <S.ProjetosSection id="Projetos">
@@ -26,13 +33,14 @@ export const Projetos: React.FC = () => {
         <MM text="Projetos" />
       </Title>
       <S.ProjetoInfo>
-        <N.Ul>
+        <S.Ul>
           {projetos.map(({ nome, id }: PropsProjeto) => (
             <N.Li key={nome} onClick={() => handleProjeto(id)}>
               <MM text={nome} />
             </N.Li>
           ))}
-        </N.Ul>
+        </S.Ul>
+        <DropDownProjeto />
         <ProjetoCard
           links={projeto.links}
           infoName={projeto.infoName}

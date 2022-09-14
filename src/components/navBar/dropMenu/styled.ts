@@ -2,8 +2,7 @@ import styled from "styled-components"
 
 const Header = styled.header`
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 200px;
   left: 0;
   top: 0;
   display: flex;
@@ -27,6 +26,7 @@ const ImgContent = styled.div`
   align-items: center;
   padding: 2rem;
   border-bottom: 1px solid var(--orange);
+  border-right: 1px solid var(--orange);
 `
 
 const ImgActive = styled.img`
@@ -36,6 +36,9 @@ const ImgActive = styled.img`
 
 const Nav = styled.nav`
   width: 200px;
+  border-bottom: 1px solid var(--orange);
+  border-right: 1px solid var(--orange);
+  border-top: 1px solid var(--orange);
 `
 
 const Ul = styled.ul`
