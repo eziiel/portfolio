@@ -30,12 +30,14 @@ export const DropMenu: React.FC = () => {
                   href={`#${text}`}
                   onClick={() => handleIconActive(id)}
                 >
-                  <S.ImgIcon src={src} alt={alt} />
                   {active && (
                     <S.NameIcon>
                       <MM text={text} />
                     </S.NameIcon>
                   )}
+                  <S.IconList>
+                    <S.ImgActive src={src} alt={alt} />
+                  </S.IconList>
                 </S.LinkIcon>
               </S.Li>
             ))}

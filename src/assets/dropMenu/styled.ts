@@ -3,6 +3,7 @@ import styled from "styled-components"
 const Header = styled.header`
   position: fixed;
   width: 100%;
+  height: 100%;
   left: 0;
   top: 0;
   display: flex;
@@ -34,7 +35,7 @@ const ImgActive = styled.img`
 `
 
 const Nav = styled.nav`
-  width: 130px;
+  width: 200px;
 `
 
 const Ul = styled.ul`
@@ -49,14 +50,14 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   width: 100%;
-  height: 80px;
   margin: 0.5rem 0;
 `
 
 const LinkIcon = styled.a`
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   cursor: pointer;
 `
 
@@ -67,9 +68,18 @@ const NameIcon = styled.span`
   text-align: center;
 `
 
-const ImgIcon = styled.img`
-  width: 80%;
-  padding: 1rem 2rem;
+const IconList = styled.div`
+  display: block;
+  height: 100%;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  img {
+    background-size: 80%;
+  }
 `
 
 export {
@@ -81,5 +91,5 @@ export {
   Li,
   LinkIcon,
   NameIcon,
-  ImgIcon
+  IconList
 }
