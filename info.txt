@@ -12,3 +12,60 @@
 1260
   Nav:display none
   page:main component display grid 1fr
+
+
+
+  
+  const NavMove = React.useRef<HTMLDivElement>(null)
+  const [widthView, setWidthView] = React.useState(false)
+  const [clickNav, setClickNav] = React.useState<PropsClick>({
+    clientX: 0,
+    clientY: 0
+  })
+  const html = document.documentElement
+
+  // window.alert("Projeto em desenvolvimento! 🔧🚧🚀")
+
+  const mouseMove = React.useCallback(
+    ({ clientX, clientY }: PropsClick): void => {
+      setClickNav({
+        clientX,
+        clientY
+      })
+    },
+    []
+  )
+
+  const handleMouseDown = React.useCallback((): void => {
+    console.log(NavMove)
+    const teste = document.getElementById("Nav")
+    if (
+      NavMove.current != null &&
+      teste != null &&
+      NavMove.current.children[0] === teste &&
+      window.innerWidth <= 750
+    )
+      NavMove.current.addEventListener("mousemove", mouseMove)
+  }, [])
+
+  const handleMouseUp = React.useCallback((): void => {
+    const teste = document.getElementById("Nav")
+    if (
+      NavMove.current != null &&
+      teste != null &&
+      NavMove.current.children[0] === teste &&
+      window.innerWidth <= 750
+    )
+      NavMove?.current.removeEventListener("mousemove", mouseMove)
+  }, [])
+
+  window.addEventListener("resize", () => {
+    setWidthView(!(window.innerWidth > 750))
+  })
+
+  React.useEffect(() => {
+    if (!widthView) setClickNav({ clientX: 0, clientY: 0 })
+  }, [widthView])
+
+   clientX={clickNav.clientX} clientY={clickNav.clientY}
+
