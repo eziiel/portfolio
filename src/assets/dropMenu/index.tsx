@@ -6,7 +6,6 @@ import { ContextRef } from "../../context"
 
 export const DropMenu: React.FC = () => {
   const [active, setActive] = React.useState(false)
-  // const [iconActive, SetIconActive] = React.useState(0)
   const { component, setComponent } = React.useContext(ContextRef)
 
   const handleDropMenu = (): void => {

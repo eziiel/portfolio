@@ -49,11 +49,10 @@ img{
   
 }
 body{
-  /* font-family: 'Major Mono Display', monospace; */
   font-family: "JetBrains Mono", monospace;
   background: var(--light);
   color: var(--dark-blue);
-
+  height: auto;
 }
 
 `

@@ -5,7 +5,6 @@ const Header = styled.header`
   width: 100%;
   left: 0;
   top: 0;
-  border-bottom: 1px solid var(--orange);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -26,6 +25,7 @@ const ImgContent = styled.div`
   place-content: center;
   align-items: center;
   padding: 2rem;
+  border-bottom: 1px solid var(--orange);
 `
 
 const ImgActive = styled.img`
