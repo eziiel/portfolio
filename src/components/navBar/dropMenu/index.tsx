@@ -7,6 +7,16 @@ import { ContextRef } from "../../../context"
 export const DropMenu: React.FC = () => {
   const [active, setActive] = React.useState(false)
   const { component, setComponent } = React.useContext(ContextRef)
+  const html = document.documentElement
+
+  html.addEventListener("click", (e: Event) => {
+    console.log(e.target)
+    const NavGuide = document.querySelector("#NavGuide")
+    const IngGuide = document.querySelector("#ImgGuide")
+    if (e.target !== NavGuide && e.target !== IngGuide) {
+      setActive(false)
+    }
+  })
 
   const handleDropMenu = (): void => {
     setActive(!active)
@@ -18,12 +28,16 @@ export const DropMenu: React.FC = () => {
 
   return (
     <S.Header onClick={handleDropMenu}>
-      <S.ImgContent>
-        <S.ImgActive src={drop[component].src} alt={drop[component].src} />
+      <S.ImgContent id="NavGuide">
+        <S.ImgActive
+          id="ImgGuide"
+          src={drop[component].src}
+          alt={drop[component].src}
+        />
       </S.ImgContent>
       {active && (
         <S.Nav>
-          <S.Ul>
+          <S.Ul id="NavGuide">
             {drop.map(({ id, src, text, alt }) => (
               <S.Li key={id}>
                 <S.LinkIcon

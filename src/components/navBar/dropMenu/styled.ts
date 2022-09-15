@@ -27,6 +27,7 @@ const ImgContent = styled.div`
   padding: 2rem;
   border-bottom: 1px solid var(--orange);
   border-right: 1px solid var(--orange);
+  z-index: 3;
 `
 
 const ImgActive = styled.img`

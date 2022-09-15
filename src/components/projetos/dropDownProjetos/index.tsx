@@ -13,11 +13,18 @@ interface PropsProjeto {
 
 export const DropDownProjeto: React.FC = () => {
   const [dropActive, setDropActive] = React.useState(false)
-  // const [projetoAtual, setProjetoAtual] = React.useState("<Countries />")
   const { setProjetoId } = React.useContext(ContextRef)
+  const html = document.documentElement
 
-  const handleProjeto = (nome: string, id: number): void => {
-    // setProjetoAtual(`<${nome}/>`)
+  html.addEventListener("click", (e: Event) => {
+    console.log(e.target)
+    const NavGuide = document.querySelector("#projetoGuide")
+    const IngGuide = document.querySelector("#imgGuide")
+    if (e.target !== NavGuide && e.target !== IngGuide) {
+      setDropActive(false)
+    }
+  })
+  const handleProjeto = (id: number): void => {
     setProjetoId(id)
   }
 
@@ -27,13 +34,13 @@ export const DropDownProjeto: React.FC = () => {
 
   return (
     <S.Nav>
-      <S.ActiveProjeto onClick={handleDrop}>
-        <img src={dropActive ? up : down} alt="seta para menu" />
+      <S.ActiveProjeto id="projetoGuide" onClick={handleDrop}>
+        <img id="imgGuide" src={dropActive ? up : down} alt="seta para menu" />
       </S.ActiveProjeto>
       {dropActive && (
         <S.Ul onClick={handleDrop}>
           {projetos.map(({ nome, id }: PropsProjeto) => (
-            <S.Li key={id} onClick={() => handleProjeto(nome, id)}>
+            <S.Li key={id} onClick={() => handleProjeto(id)}>
               <MM text={nome} />
             </S.Li>
           ))}
