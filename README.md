@@ -1,5 +1,10 @@
 # Portfolio
 
+<img align="center" src=".github/banner.png" alt="banner">
+</p>
+<p align="center">
+    <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=0B1E8A&labelColor=E85937" alt="License">
+</p>
 
   ## 🚀 start
   <br />
@@ -37,6 +42,12 @@ Como ainda não possuo experiência trabalhando em uma empresa, dedico meus conh
 ## 🔖 Projects
 <br/>
 
+- [Countries](https://github.com/eziiel/countries-next)
+- [Achilles](https://github.com/eziiel/achilles)
+- [Room](https://github.com/eziiel/room)
+- [Space-Tourism](https://github.com/eziiel/Space-T)
+- [Time-Dashboard](https://github.com/eziiel/time-tracking-dashboard)
+- [entre outros...](https://github.com/eziiel?tab=repositories)
 
 <br/>
 <br/>
@@ -67,10 +78,6 @@ eziielp10@hotmail.com
 
 <br>
 <br>
-
-
- >**<p align="center" > 🚧🔧 Projeto em construção 🔧🚧</p>**
-
 
 
 
