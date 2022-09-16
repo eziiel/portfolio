@@ -10,7 +10,6 @@ export const DropMenu: React.FC = () => {
   const html = document.documentElement
 
   html.addEventListener("click", (e: Event) => {
-    console.log(e.target)
     const NavGuide = document.querySelector("#NavGuide")
     const IngGuide = document.querySelector("#ImgGuide")
     if (e.target !== NavGuide && e.target !== IngGuide) {

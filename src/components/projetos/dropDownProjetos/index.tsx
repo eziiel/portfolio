@@ -17,7 +17,6 @@ export const DropDownProjeto: React.FC = () => {
   const html = document.documentElement
 
   html.addEventListener("click", (e: Event) => {
-    console.log(e.target)
     const NavGuide = document.querySelector("#projetoGuide")
     const IngGuide = document.querySelector("#imgGuide")
     if (e.target !== NavGuide && e.target !== IngGuide) {
