@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 interface PropsImg {
   src: string;
@@ -27,13 +28,16 @@ const Header = styled.header`
   @media (max-width: 1260px) {
     display: none;
   }
+  @media (max-width: 410px) {
+    width: 100% !important;
+  }
 `
 
 const Nav = styled.nav`
   width: 100%;
   height: 100%;
-  font-family: "Major Mono Display", monospace;
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'Major Mono Display', monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -65,7 +69,7 @@ const Img = styled.img.attrs(({ alt, src, status }: PropsImg) => {
   width: 40px;
   transition: 0.5s ease-in;
 
-  ${props =>
+  ${(props) =>
     props.status === true &&
     css`
       transform: translate3d(100px, 0, 0);
@@ -82,7 +86,7 @@ const SpanMenu =
   transition: 0.5s ease-in;
 
 
-  ${props =>
+  ${(props) =>
     props.status &&
     css`
       opacity: 1;

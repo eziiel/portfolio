@@ -17,19 +17,19 @@
   },
   {
     "id": 1,
-    "nome":"Space-Turism",
+    "nome":"gitBlog",
     "links": [
       {
         "nome":"vercel",
-         "link":"https://space-turism-opal.vercel.app/"},
+         "link":"https://git-blog-chi.vercel.app"},
       {
         "nome":"github",
-        "link":"https://github.com/eziiel/Space-T"}
+        "link":"https://github.com/eziiel/gitBlog"}
     ],
-    "img": "images/projetos/space.png",
-    "alt": "space-banner",
-    "infoName":"Projeto realizado para apresentação de informações interestelares.",
-    "infoText":" Utilizado React-js, Type-Script, Styled-Components, React-Router-Dom. Aplicado display responsivo, juntamente com drop menu, e sistema de roteamento entre páginas."
+    "img": "images/projetos/gitBlog.png",
+    "alt": "gitBlog-banner",
+    "infoName":"Utilizado React-js, Type-Script, Styled-Components, React-Router-Dom. Aplicado display responsivo, juntamente com drop menu, e sistema de roteamento entre páginas.",
+    "infoText":"Projeto realizado para simular um rede social buscando dados de API do GitHub, então coloquei issues com exercicios que vou fazendo 'quando lembro de colocar'."
   },
   {
     "id": 2,
@@ -49,34 +49,34 @@
   },
   {
     "id": 3,
-    "nome":"Room",
+    "nome":"coffee",
     "links": [
       {
         "nome":"vercel",
-         "link":"https://room-indol.vercel.app/"},
+         "link":"https://coffee-beige.vercel.app"},
       {
         "nome":"github",
-        "link":"https://github.com/eziiel/room"}
+        "link":"https://github.com/eziiel/coffee"}
     ],
-    "img": "images/projetos/room.jpg",
-    "alt": "room-banner",
-    "infoName":"Projeto realizado para apresentação de moveis.",
-    "infoText":"Utilizado React-js, Type-Script, Styled-Components. Aplicado display responsivo, juntamente com drop menu, e sistema de slide (corrossel) para apresentação de moveis."
+    "img": "images/projetos/coffee.png",
+    "alt": "rcoffee",
+    "infoName":"Projeto realizado para vendas de cafes.",
+    "infoText":"Utilizado React com mais conceitos, Type-Script, Styled-Components. Aplicado display responsivo - "
   },
   {
     "id": 4,
-    "nome":"time tracking",
+    "nome":"halloween",
     "links": [
       {
         "nome":"vercel",
-         "link":"https://time-tracking-dashboard-sooty.vercel.app/"},
+         "link":"https://halloween-silk.vercel.app"},
       {
         "nome":"github",
-        "link":"https://github.com/eziiel/time-tracking-dashboard"}
+        "link":"https://github.com/eziiel/halloween"}
     ],
-    "img": "images/projetos/time-dashboard.png",
-    "alt": "time-dashboard-banner",
-    "infoName":"Projeto feito para acompanhar tempo gasto em certas atividades de um usuário.",
-    "infoText":"Projeto feito com React-JS, aplicado responsividade em: 940px | 680px | 480px. Aprendi mais sobre responsividade, e acabei vendo um pouco de Styled-Components, porém optei por usar css-module."
+    "img": "images/projetos/halloween.png",
+    "alt": "halloween",
+    "infoName":"Projeto feito promover enfeites de halloween.",
+    "infoText":"Projeto feito com React-JS, aplicado responsividade. Aprendi mais sobre responsividade"
   }
 ]

@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Section } from "../../styleds/forComponents/geral"
+import styled from 'styled-components'
+import { Section } from '../../styleds/forComponents/geral'
 
 const ProjetosSection = styled(Section)`
   background: var(--dark-blue);

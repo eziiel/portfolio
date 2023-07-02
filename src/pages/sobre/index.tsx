@@ -1,9 +1,9 @@
-import React from "react"
-import * as S from "./styled"
-import { Title } from "../../styleds/forComponents/geral"
-import { MM } from "../../assets/textCode/mm"
-import Data from "../../assets/datas/dataText.json"
-import { Observe } from "../../assets/observer"
+import React from 'react'
+import * as S from './styled'
+import { Title } from '../../styleds/forComponents/geral'
+import { MM } from '../../assets/textCode/mm'
+import Data from '../../api/dataText.json'
+import { Observe } from '../../assets/observer'
 
 export const Sobre: React.FC = () => {
   const data = Data[0].sobre
@@ -15,7 +15,7 @@ export const Sobre: React.FC = () => {
         <MM text="Sobre" />
       </Title>
       <S.SobreInfo>
-        {data.text.map(text => (
+        {data.text.map((text) => (
           <S.Info key={text}>{text}</S.Info>
         ))}
       </S.SobreInfo>

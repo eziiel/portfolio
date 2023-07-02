@@ -1,10 +1,10 @@
-import React from "react"
-import * as S from "./styled"
-import projetos from "../../../assets/datas/dataProjetos.json"
-import { MM } from "../../../assets/textCode/mm"
-import down from "../../../../public/images/utils/down.svg"
-import up from "../../../../public/images/utils/up.svg"
-import { ContextRef } from "../../../context"
+import React from 'react'
+import * as S from './styled'
+import projetos from '../../../api/dataProjetos.json'
+import { MM } from '../../../assets/textCode/mm'
+import down from '../../../../public/images/utils/down.svg'
+import up from '../../../../public/images/utils/up.svg'
+import { ContextRef } from '../../../context'
 
 interface PropsProjeto {
   nome: string;
@@ -16,9 +16,9 @@ export const DropDownProjeto: React.FC = () => {
   const { setProjetoId } = React.useContext(ContextRef)
   const html = document.documentElement
 
-  html.addEventListener("click", (e: Event) => {
-    const NavGuide = document.querySelector("#projetoGuide")
-    const IngGuide = document.querySelector("#imgGuide")
+  html.addEventListener('click', (e: Event) => {
+    const NavGuide = document.querySelector('#projetoGuide')
+    const IngGuide = document.querySelector('#imgGuide')
     if (e.target !== NavGuide && e.target !== IngGuide) {
       setDropActive(false)
     }

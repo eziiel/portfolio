@@ -1,6 +1,6 @@
-import React from "react"
-import { MM } from "../textCode/mm"
-import * as S from "./styled"
+import React from 'react'
+import { MM } from '../textCode/mm'
+import * as S from './styled'
 
 interface PropsLinks {
   nome: string;

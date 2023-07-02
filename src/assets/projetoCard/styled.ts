@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components"
+import styled, { css } from 'styled-components'
 
 interface Anima {
   anima: boolean;
@@ -17,14 +17,7 @@ const ProjetosData =
   transform: translate3d(-80px, 0 0);
   opacity: 0;
   transition: ease-in-out 0.5s;
-
-  /* @keyframes card {
-    to {
-      transform: translate3d(0, 0 0);
-      opacity: initial;
-    }
-  } */
-  ${props =>
+  ${(props) =>
     props.anima &&
     css`
       opacity: 1;
@@ -87,5 +80,5 @@ export {
   InfoText,
   LinksProjeto,
   LinkList,
-  Link
+  Link,
 }

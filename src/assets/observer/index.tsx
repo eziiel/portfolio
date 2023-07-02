@@ -1,9 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React from "react"
 import { ContextRef } from "../../context";
-import Data from "../datas/images.json"
+import Data from "../../api/images.json"
 
 interface PropsRef {
   reference: string;

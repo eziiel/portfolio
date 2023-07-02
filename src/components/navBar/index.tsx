@@ -1,10 +1,10 @@
-import React from "react"
-import * as S from "./styled"
-import Images from "../../assets/datas/images.json"
-import Redes from "../../assets/datas/imagesRedes.json"
-import { MM } from "../../assets/textCode/mm"
-import { ContextRef } from "../../context"
-import { DropMenu } from "./dropMenu"
+import React from 'react'
+import * as S from './styled'
+import Images from '../../api/images.json'
+import Redes from '../../api/imagesRedes.json'
+import { MM } from '../../assets/textCode/mm'
+import { ContextRef } from '../../context'
+import { DropMenu } from './dropMenu'
 
 export const NavBar: React.FC = () => {
   const { component, setComponent } = React.useContext(ContextRef)

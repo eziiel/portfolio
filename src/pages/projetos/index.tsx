@@ -1,13 +1,13 @@
-import React from "react"
-import projetos from "../../assets/datas/dataProjetos.json"
-import { Observe } from "../../assets/observer"
-import { ProjetoCard } from "../../assets/projetoCard/projeto"
-import { MM } from "../../assets/textCode/mm"
-import { ContextRef } from "../../context"
-import { Title } from "../../styleds/forComponents/geral"
-import * as N from "../navBar/styled"
-import { DropDownProjeto } from "./dropDownProjetos"
-import * as S from "./styled"
+import React from 'react'
+import projetos from '../../api/dataProjetos.json'
+import { Observe } from '../../assets/observer'
+import { ProjetoCard } from '../../assets/projetoCard/projeto'
+import { MM } from '../../assets/textCode/mm'
+import { ContextRef } from '../../context'
+import { Title } from '../../styleds/forComponents/geral'
+import * as N from '../../components/navBar/styled'
+import { DropDownProjeto } from './dropDownProjetos'
+import * as S from './styled'
 
 interface PropsProjeto {
   nome: string;

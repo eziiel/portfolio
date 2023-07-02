@@ -1,17 +1,17 @@
-import React from "react"
-import * as S from "./styled"
-import drop from "../../../assets/datas/dropMenu.json"
-import { MM } from "../../../assets/textCode/mm"
-import { ContextRef } from "../../../context"
+import React from 'react'
+import * as S from './styled'
+import drop from '../../../api/dropMenu.json'
+import { MM } from '../../../assets/textCode/mm'
+import { ContextRef } from '../../../context'
 
 export const DropMenu: React.FC = () => {
   const [active, setActive] = React.useState(false)
   const { component, setComponent } = React.useContext(ContextRef)
   const html = document.documentElement
 
-  html.addEventListener("click", (e: Event) => {
-    const NavGuide = document.querySelector("#NavGuide")
-    const IngGuide = document.querySelector("#ImgGuide")
+  html.addEventListener('click', (e: Event) => {
+    const NavGuide = document.querySelector('#NavGuide')
+    const IngGuide = document.querySelector('#ImgGuide')
     if (e.target !== NavGuide && e.target !== IngGuide) {
       setActive(false)
     }

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Header = styled.header`
   position: fixed;
@@ -95,5 +95,5 @@ export {
   Li,
   LinkIcon,
   NameIcon,
-  IconList
+  IconList,
 }

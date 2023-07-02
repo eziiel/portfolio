@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable @typescript-eslint/no-unused-expressions */
-import styled from "styled-components"
-import { Section } from "../../styleds/forComponents/geral"
+import styled from 'styled-components'
+import { Section } from '../../styleds/forComponents/geral'
 
 interface PropsImg {
   src: string;
@@ -80,5 +81,5 @@ export {
   IconsFerramentas,
   Img,
   NameIcon,
-  InfoFerramentas
+  InfoFerramentas,
 }

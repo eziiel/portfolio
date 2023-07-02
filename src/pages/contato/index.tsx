@@ -1,8 +1,8 @@
-import React from "react"
-import { Observe } from "../../assets/observer"
-import { MM } from "../../assets/textCode/mm"
-import { Title } from "../../styleds/forComponents/geral"
-import * as S from "./styled"
+import React from 'react'
+import { Observe } from '../../assets/observer'
+import { MM } from '../../assets/textCode/mm'
+import { Title } from '../../styleds/forComponents/geral'
+import * as S from './styled'
 
 export const Contato: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
-import React, { createContext, ReactNode } from "react"
+import React, { createContext, ReactNode } from 'react'
 
 interface PropsElement {
   children: ReactNode;
@@ -13,13 +13,13 @@ interface PropsRef {
   setProjetoId: (newState: number) => void;
 }
 
-const local = window.localStorage.getItem("component")
+const local = window.localStorage.getItem('component')
 
 const init: PropsRef = {
   component: local != null ? JSON.parse(local) : 0,
   setComponent: () => {},
   projetoId: 0,
-  setProjetoId: () => {}
+  setProjetoId: () => {},
 }
 export const ContextRef = createContext(init)
 

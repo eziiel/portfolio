@@ -1,9 +1,9 @@
-import React from "react"
-import * as S from "./styled"
-import { Title } from "../../styleds/forComponents/geral"
-import ferramentas from "../../assets/datas/ferramentas.json"
-import { MM } from "../../assets/textCode/mm"
-import { Observe } from "../../assets/observer"
+import React from 'react'
+import * as S from './styled'
+import { Title } from '../../styleds/forComponents/geral'
+import ferramentas from '../../api/ferramentas.json'
+import { MM } from '../../assets/textCode/mm'
+import { Observe } from '../../assets/observer'
 
 export const Experiencia: React.FC = () => {
   return (

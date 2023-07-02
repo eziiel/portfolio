@@ -1,5 +1,6 @@
-import React from "react"
-import Span from "./styled"
+/* eslint-disable no-undef */
+import React from 'react'
+import Span from './styled'
 
 interface Props {
   text: string;

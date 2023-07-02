@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 function pixelsToRem(...values: number[]): string {
   // eslint-disable-next-line no-return-assign, no-param-reassign
-  return values.reduce((a, i) => (a += `${i / 16}rem `), "").trim()
+  return values.reduce((a, i) => (a += `${i / 16}rem `), '').trim()
 }
 const Global = createGlobalStyle`
 
@@ -35,16 +35,16 @@ img{
 
   //fonts
   --title:normal 700 ${pixelsToRem(36)}/${pixelsToRem(
-  38
+  38,
 )} "JetBrains Mono", monospace;
   --title2:normal 700 ${pixelsToRem(24)}/${pixelsToRem(
-  32
+  32,
 )} "JetBrains Mono", monospace;
   --title3:normal 700 ${pixelsToRem(28)}/${pixelsToRem(
-  32
+  32,
 )} "JetBrains Mono", monospace;
   --info:normal 700 ${pixelsToRem(22)}/${pixelsToRem(
-  24
+  24,
 )} "JetBrains Mono", monospace;
   
 }
