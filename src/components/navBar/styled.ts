@@ -101,7 +101,7 @@ const LinkForPage = styled.a`
   align-items: center;
   gap: 0.5rem;
   position: relative;
-
+  transition: 0.5s ease-in-out fowards;
   @media (max-width: 1670px) {
     font-size: 0.875rem;
   }

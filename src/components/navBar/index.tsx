@@ -20,7 +20,12 @@ export const NavBar: React.FC = () => {
         <S.Nav>
           <S.Ul>
             {Images.map(({ src, alt, text, id }) => (
-              <S.Li key={alt} onClick={() => handleStatusMenu(id)}>
+              <S.Li
+                key={alt}
+                onClick={() => {
+                  handleStatusMenu(id)
+                }}
+              >
                 <S.LinkForPage href={`#${text}`}>
                   <S.Img src={src} alt={alt} status={id === component}></S.Img>
                   <S.SpanMenu status={id === component}>

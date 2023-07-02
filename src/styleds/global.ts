@@ -55,6 +55,9 @@ body{
   height: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 `
 
 export default Global
