@@ -1,6 +1,5 @@
 import React from 'react'
 import * as S from './styled'
-import projetos from '../../../api/dataProjetos.json'
 import { MM } from '../../../assets/textCode/mm'
 import down from '../../../../public/images/utils/down.svg'
 import up from '../../../../public/images/utils/up.svg'
@@ -13,6 +12,17 @@ interface PropsProjeto {
 
 export const DropDownProjeto: React.FC = () => {
   const [dropActive, setDropActive] = React.useState(false)
+  const [projetos, setProjetos] = React.useState([])
+
+  React.useEffect(() => {
+    async function DataAbout() {
+      const response = await fetch('api/dataProjetos.json')
+        .then((response) => response.json())
+        .then((res) => res)
+      setProjetos(response)
+    }
+    DataAbout()
+  }, [])
   const { setProjetoId } = React.useContext(ContextRef)
   const html = document.documentElement
 

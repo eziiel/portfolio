@@ -11,6 +11,7 @@ const Header = styled.header`
   cursor: pointer;
   z-index: 2;
   display: none;
+  transition: 0.4s ease-in-out fowards;
 
   @media (max-width: 1260px) {
     display: flex;

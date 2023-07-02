@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from './styled'
-import drop from '../../../api/dropMenu.json'
+import drop from '../../../../public/api/dropMenu.json'
 import { MM } from '../../../assets/textCode/mm'
 import { ContextRef } from '../../../context'
 
@@ -23,6 +23,12 @@ export const DropMenu: React.FC = () => {
 
   const handleIconActive = (id: number): void => {
     setComponent(id)
+  }
+
+  const prevScrollPos = window.scrollY
+
+  window.onscroll = function () {
+    console.log(prevScrollPos)
   }
 
   return (

@@ -4,7 +4,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React from "react"
 import { ContextRef } from "../../context";
-import Data from "../../api/images.json"
 
 interface PropsRef {
   reference: string;
@@ -12,6 +11,13 @@ interface PropsRef {
 
 export const Observe = ({ reference }: PropsRef) => {
   const { component, setComponent } = React.useContext(ContextRef)
+  const [dataImgs, setDataImgs] = React.useState([])
+
+  React.useEffect(() => {
+    fetch('api/images.json')
+      .then((response) => response.json())
+      .then((res) => setDataImgs(res))
+  }, [])
 
   const options = {
     root: document.querySelector(reference)!,
@@ -21,7 +27,7 @@ export const Observe = ({ reference }: PropsRef) => {
 
   React.useEffect(() => {
     const intersectionObserver = new IntersectionObserver(entries => {
-      Data.forEach(({id, text}) => {
+      dataImgs.forEach(({id, text}) => {
         if(entries[0].target.id === text && entries[0].isIntersecting) {
           setComponent(id)
           window.localStorage.setItem("component", JSON.stringify(component))

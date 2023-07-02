@@ -1,7 +1,5 @@
 import React from 'react'
 import * as S from './styled'
-import Images from '../../api/images.json'
-import Redes from '../../api/imagesRedes.json'
 import { MM } from '../../assets/textCode/mm'
 import { ContextRef } from '../../context'
 import { DropMenu } from './dropMenu'
@@ -9,6 +7,19 @@ import { DropMenu } from './dropMenu'
 export const NavBar: React.FC = () => {
   const { component, setComponent } = React.useContext(ContextRef)
   const head = React.useRef<HTMLHeadElement>(null)
+  const [dataImgs, setDataImgs] = React.useState([])
+  const [dataImgsRedes, setDataImgsRedes] = React.useState([])
+
+  React.useEffect(() => {
+    fetch('api/images.json')
+      .then((response) => response.json())
+      .then((res) => setDataImgs(res))
+  }, [])
+  React.useEffect(() => {
+    fetch('api/imagesRedes.json')
+      .then((response) => response.json())
+      .then((res) => setDataImgsRedes(res))
+  }, [])
 
   const handleStatusMenu = (id: number): void => {
     setComponent(id)
@@ -19,7 +30,7 @@ export const NavBar: React.FC = () => {
       <S.Header id="Nav" ref={head}>
         <S.Nav>
           <S.Ul>
-            {Images.map(({ src, alt, text, id }) => (
+            {dataImgs?.map(({ src, alt, text, id }) => (
               <S.Li
                 key={alt}
                 onClick={() => {
@@ -36,7 +47,7 @@ export const NavBar: React.FC = () => {
             ))}
           </S.Ul>
           <S.NavRedes>
-            {Redes.map(({ id, src, alt, link, text }) => (
+            {dataImgsRedes.map(({ id, src, alt, link, text }) => (
               <li key={id}>
                 <S.LinkForPage href={link} target="_blank">
                   <S.Img src={src} alt={alt} />

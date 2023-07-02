@@ -1,5 +1,5 @@
 import React from 'react'
-import projetos from '../../api/dataProjetos.json'
+import projetos from '../../../public/api/dataProjetos.json'
 import { Observe } from '../../assets/observer'
 import { ProjetoCard } from '../../assets/projetoCard/projeto'
 import { MM } from '../../assets/textCode/mm'
@@ -17,6 +17,17 @@ interface PropsProjeto {
 export const Projetos: React.FC = () => {
   const { projetoId } = React.useContext(ContextRef)
   const [projeto, setProjeto] = React.useState(projetos[0])
+  const [DataProjeto, setDataProjetos] = React.useState([])
+
+  React.useEffect(() => {
+    async function DataAbout() {
+      const response = await fetch('api/dataProjetos.json')
+        .then((response) => response.json())
+        .then((res) => res)
+      setDataProjetos(response)
+    }
+    DataAbout()
+  }, [])
 
   const handleProjeto = (id: number): void => {
     setProjeto(projetos[id])
@@ -34,7 +45,7 @@ export const Projetos: React.FC = () => {
       </Title>
       <S.ProjetoInfo>
         <S.Ul>
-          {projetos.map(({ nome, id }: PropsProjeto) => (
+          {DataProjeto?.map(({ nome, id }: PropsProjeto) => (
             <N.Li key={nome} onClick={() => handleProjeto(id)}>
               <MM text={nome} />
             </N.Li>

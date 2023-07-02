@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styled'
 import { Title } from '../../styleds/forComponents/geral'
-import Data from '../../api/dataText.json'
+import Data from '../../../public/api/dataText.json'
 import { MM } from '../../assets/textCode/mm'
 import { Observe } from '../../assets/observer'
 
