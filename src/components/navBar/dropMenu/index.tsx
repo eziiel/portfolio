@@ -25,12 +25,6 @@ export const DropMenu: React.FC = () => {
     setComponent(id)
   }
 
-  const prevScrollPos = window.scrollY
-
-  window.onscroll = function () {
-    console.log(prevScrollPos)
-  }
-
   return (
     <S.Header onClick={handleDropMenu}>
       <S.ImgContent id="NavGuide">

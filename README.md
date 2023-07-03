@@ -6,6 +6,14 @@
     <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=0B1E8A&labelColor=E85937" alt="License">
 </p>
 
+  ## índice
+
+  * [start](#start)
+  * [About](#About)
+  * [Projects](#Projects)
+  * [Experiência](#Experiência)
+  * [contact](#contact)
+
   ## 🚀 start
   <br />
   Eai, tudo Bem? espero que sim 🙌
@@ -78,7 +86,6 @@ eziielp10@hotmail.com
 
 <br>
 <br>
-
 
 
 <br>
